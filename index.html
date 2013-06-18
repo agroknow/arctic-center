@@ -11,12 +11,12 @@
         <meta name="keywords" content="SEARCH" />
         
         <link href="http://www.arcticcentre.org/includes/global_print.css" type="text/css" media="print" rel="stylesheet" />
-        <link href="http://www.arcticcentre.org/includes/global.css" type="text/css" media="screen, projection" rel="stylesheet" />
+       <link href="http://www.arcticcentre.org/includes/global.css" type="text/css" media="screen, projection" rel="stylesheet" />
         
         <link href="http://www.arcticcentre.org/layouts/LKKK/ArcticCenter/includes/print.css" media="print" rel="stylesheet" type="text/css" />
         <link href="http://www.arcticcentre.org/layouts/LKKK/ArcticCenter/includes/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
             
-<script type="text/javascript" src="/includes/jquery/jquery-1.3.2.min.js"></script>
+<!--<script type="text/javascript" src="/includes/jquery/jquery-1.3.2.min.js"></script>-->
 <script type="text/javascript" src="/includes/jquery/jquery.cookie.js"></script>
 <script type="text/javascript" src="/layouts/LKKK/ArcticCenter//includes/jquery.script.js"></script>
 
@@ -30,8 +30,9 @@
         </script>
         
         
-        <!--more css-->
+        <!--more css(AK)-->
         <link rel="stylesheet" type="text/css" media="screen" href="style/ak-style.css" />
+        <!--end (AK)-->
         
         
     </head>
@@ -151,15 +152,87 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'InfowebForm', ['t
                         </div>
                     </section>
                     <!-------------------------------------------------------- end start search-->
-                
-                <div>
-                    <div class="highlighted_div"><h3>Highlighted Pathway from other museums mpla mpla</h3>
-                        <img src="images/slide1.jpeg" /><p>Some text from my head. You know like lorem ipsum and staff like that</p></div>
-                    <div class="featured_div"><h3>Highlighted Pathway from other museums mpla mpla</h3>
-                        <img src="images/slide1.jpeg" /><p>Some text from my head. You know like lorem ipsum and staff like that</p></div>
+                <!--left_sliders-->
+                <div class="highlighted_paths ">
+                    <h3>Highlighted Pathways from other Museum's</h3>
+                    <div class="is_slider">
+                        
+                        <!-- page 1 -->
+                        <div class="slider_page">
+                                <a  href="http://education.natural-europe.eu/natural_europe/exhibits/show/Flying_dinosaurs/to-begin-with?nhm=JME" target="_blank">
+                                    <img src="images/dino_fly.jpg" alt="thumb" width="90%"/>
+                                </a>
+                                <h2>
+                                    <a href="http://education.natural-europe.eu/natural_europe/exhibits/show/Flying_dinosaurs/to-begin-with?nhm=JME" target="_blank" >How dinosaurs learned to fly</a>
+                                </h2>
+                                <p>
+                                This workshop assists participants in finding out from which animals the oldest known birds are descended. In this process participants will explore the physical prerequisites for flying. The findings can then be verified at the Jura-Museum’s division on "Himmelsstürmer" (air-bound creatures), in particular by checking them against fossils of the first bird, Archaeopteryx.
+                                </p>
+                        </div>
+                        <!-- page 2 -->
+                        <div class="slider_page">
+                                <a href="http://education.natural-europe.eu/natural_europe/exhibits/show/Urban-trees/to-begin-with?nhm=TNHM" target="_blank">
+                                    <img src="images/urban_trees.jpg" alt="thumb" width="90%"  />
+                                </a>
+                                <h2>
+                                    <a href="http://education.natural-europe.eu/natural_europe/exhibits/show/Urban-trees/to-begin-with?nhm=TNHM" target="_blank">Urban Trees</a>
+                                </h2>
+                                <p>
+                                The subject of the lecture is trees. Lecture is suitable for introducing a new subject and reviewing. Children are taught how to identify trees with the help of distinguishing characteristics, and more information about trees and their usage is given.
+                            
+                                </p>
+                        </div>
+
+                        <!--page 3-->
+                        <div class="slider_page">
+                            <a href="http://education.natural-europe.eu/natural_europe/exhibits/show/pathway-slug-146/to-begin-with?nhm=MNHN" target="_blank">
+                                <img src="images/earth_adventure.jpg" alt="thumb" width="90%"  />
+                            </a>
+                            <h2>
+                                <a href="http://education.natural-europe.eu/natural_europe/exhibits/show/pathway-slug-146/to-begin-with?nhm=MNHN" target="_blank">The Earth`s adventure</a>
+                            </h2>
+                            <p>
+                           The mission of the National Museum of Natural History and Science (Lisbon, Portugal) is to promote the public understanding and curiosity about nature and science, in order to promote scientific literacy. This mission is achieved through the use of collections and of the university heritage, research, exhibitions and scientific, educational and cultural activities that promote the active learning about science.
+                            
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
 
-                
+                <!--right_sliders-->
+                <div class="teacher_paths">
+                    <h3>Teacher Pathways</h3>
+                    <div class=" is_slider">
+                        
+                        <!-- page 1 -->
+                        <div class="slider_page">
+                                <a class="hasshadow" href="item.html?id=14349" target="_blank">
+                                    <img src="images/no-image.gif" alt="thumb" width="90%"/>
+                                </a>
+                                <h2>
+                                    <a href="#">requirements missing</a>
+                                </h2>
+                                <p>
+                                An example item just to feel the mockup
+                                </p>
+                        </div>
+                        <!-- page 2 -->
+                        <div class="slider_page">
+                            <a class="hasshadow" href="item.html?id=14349" target="_blank">
+                                <img src="images/no-image.gif" alt="thumb" width="90%"/>
+                            </a>
+                            <h2>
+                                <a href="#">requirements missing</a>
+                            </h2>
+                            <p>
+                            An example item just to feel the mockup
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
                 
                 <!--End AK_CONTENT-->
             </div>
@@ -180,14 +253,6 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'InfowebForm', ['t
 </div>
 
 
-
-
-
- 
-            
-        
-    
-
 <script type="text/javascript">
 //<![CDATA[
 Sys.Application.add_init(function() {
@@ -195,9 +260,12 @@ Sys.Application.add_init(function() {
 });
 //]]>
 </script>
-</form>
     
-    
+    <script src="js/jquery.js"></script>
+
+
+    <!-- include Cycle plugin -->
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>    
 
     <script type="text/javascript">
 
@@ -210,7 +278,32 @@ Sys.Application.add_init(function() {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+        </script>
 
-</script>
+    <!--AK_sliders-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+                          $('.is_slider').each(function() {
+                                               var $navWrap = $('<div class="slider-navigation clearfix"></div>');
+                                               var $navPrev = $('<a href="#" class="slider-prev">&lt</a>');
+                                               $navWrap.append($navPrev);
+                                               var $navPager = $('<div class="pager"></div>');
+                                               $navWrap.append($navPager); 
+                                               var $navNext = $('<a href="#" class="slider-next">&gt</a>');
+                                               $navWrap.append($navNext);
+                                               $navWrap.insertAfter(this);
+                                               $(this).cycle({
+                                                             fx:'scrollLeft',
+                                                             timeout:0,
+                                                             prev:$navPrev,
+                                                             next:$navNext,
+                                                             pager:$navPager
+                                                             });
+                                               
+                                               });
+                          });
+		</script>
+    
+    
     </body>
 </html>

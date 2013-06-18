@@ -132,69 +132,70 @@
 .items div a.teachers:hover { background:url(images/teachers_hover.png) center top no-repeat; }
 
 /**
- ===========================================ROUNDABOUT======================================
+ =========================================== **HIGHLIGHTED PATHS - TEACHER PATHS ** ======================================
  */
-
-
-#my_carousel{
-    margin:60px auto;
-}
-.roundabout-holder {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 350px;
-    width: 500px;
-}
-.roundabout-moveable-item {
-    height: 350px;
-    width: 500px;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid lightgray;
-    text-align:center;
-    /*box-shadow: 5px 5px 5px #888888;*/
-}
-.roundabout-in-focus {
-    cursor: auto;
+.is_slider{
+    height:480px;
+    width: 100%;
 }
 
-/**
- ===========================================HIGHLIGHTED & FEATURED ITEMS======================================
- */
-.highlighted_div{
-    width:45%;
+.slider_page{
+    width:95%;
+}
+
+.highlighted_paths{
+    width:48%;
     float:left;
-    margin-left:10px;
-    border: 1px solid #0069BE;
-    padding:0px 10px 10px 10px;
-    background:url(images/back_blue_gradient.png) top repeat-x;
 }
 
-.featured_div{
-    width:45%;
+.highlighted_paths h3{
+    background: url(images/back_blue_gradient.png) repeat-x;
+    color:white;
+    padding: 15px 10px 10px 10px;
+    margin-bottom: 5px;
+}
+
+.teacher_paths{
+    width:48%;
     float:right;
-    margin-right:10px;
-    border: 1px solid #0069BE;
-    padding:0px 10px 10px 10px;
-    background:url(images/back_blue_gradient.png) top repeat-x;
 }
 
-.highlighted_div h3{
+.teacher_paths h3{
+    background: url(images/back_blue_gradient.png) repeat-x;
     color:white;
-    line-height:45px;
-    font-weight:lighter;
-    padding-left:10px;
+    padding: 15px 10px 10px 10px;
+    margin-bottom: 5px;
 }
 
-.featured_div h3{
-    color:white;
-    line-height:45px;
-    font-weight:lighter;
-    padding-left:10px;
+.slider-navigation{
+    display: block;
+    width:100%;
+    padding-left:5px;
+    text-decoration:none;
+    font: bold 15px/20px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    
 }
 
+.slider-prev{
+    float:left;
+    padding-right:10px;
+    text-decoration:none;
+}
 
+.slider-next{
+    float:left;
+    padding-left:10px;
+    text-decoration:none;
+}
+
+.pager{
+    float:left;
+}
+
+.activeSlide{
+    color:red !important;
+    
+}
 /**
  ===========================================LISTING======================================
  */
@@ -666,11 +667,12 @@ a.grflag {
 
 .access, .reportaproblem {
 	padding:35px 0 0 0;
-	margin:22px 0 0 28px;
+	margin:10px 10px 0 28px;
 	background-position:center top;
 	background-repeat:no-repeat;
 	display:inline-block;
 	font-size:12px;
+    float:right;
 }
 
 .access{
