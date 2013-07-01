@@ -1112,8 +1112,11 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                                                            //###
                                                            //alert(data.val);
                                                            
-                                                           //removing HNHM from facets
-                                                           var label = data.val.split('AC - ')[1];
+                                                           //removing AC -  from facets
+                                                           var label = data.val;
+                                                           if(data.val.indexOf('AC - ')!=-1){
+                                                           label = data.val.split('AC - ')[1];
+                                                           }
                                                            
                                                            a({href:'#', id: data.field + ':' + data.val, title: data.val, onclick:"toggleFacetValue('#{id}','#{parent}')".interpolate({id: data.field + ':' + data.val,parent: data.field})}, span(label), span({cls:'total'}, data.count));
                                                            
