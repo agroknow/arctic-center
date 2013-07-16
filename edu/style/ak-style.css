@@ -167,7 +167,7 @@
     margin-bottom: 5px;
 }
 
-.slider-navigation{
+..slider-navigation{
     display: block;
     width:100%;
     padding-left:5px;
@@ -190,12 +190,22 @@
 
 .pager{
     float:left;
+    padding:0px;
+    padding-top:5px;
+}
+.pager a{
+    float:left;
+    text-indent:-9999px;
+	background:url(images/pager_sprite_ac.png) 3px 3px no-repeat;
+	height:13px;
+	width:13px;
+	display:inline-block;
 }
 
-.activeSlide{
-    color:red !important;
-    
+.pager a.activeSlide, .pager a:hover {
+	background-position:3px -20px;
 }
+
 /**
  ===========================================LISTING======================================
  */
