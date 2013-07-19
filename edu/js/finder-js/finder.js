@@ -117,6 +117,7 @@ langName['sv']= 'Swedish';
 langName['ell']= 'Greek';
 langName ['lat'] = 'Latin';
 langName['rus'] = 'Russian';
+langName['fi'] = 'Finnish';
 
 langName['ori']= 'Oriya';
 langName['hin']='Hindi';
