@@ -14,13 +14,13 @@ function getItemJSONP(itemID)
                 
                 
                 
-                //parse array and create an JS Object Array
+                //parse array and create a JS Object Array
                 //every item is a JSON
                 var thisJson = JSON.stringify(data);
                 var tmp = JSON.parse(thisJson);
                 var record = tmp.result.metadata[0];
                 
-                //alert(thisJson);
+                //console.log(thisJson);
                 
                 //left_sidebar
                 
