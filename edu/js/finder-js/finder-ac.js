@@ -229,24 +229,7 @@ function initializeFinder(){
 		div.push('<div id="search_results"></div>');
 		div.push('</div>');
 		$('insert_results').update(div.join(''));
-        //		if (!$('insert_moreResults')) {
-        //			$('body').insert('<div id="insert_moreResults" style="display:none"></div>');
-        //		}
-        //		var div = [];
-        //		div.push('<div id="moreResults"><h3>More Results</h3>');
-        //		for (var i=0;i<EXT_SOURCES.length;i++){
-        //			var es = EXT_SOURCES[i];
-        //			var esn = AVAILABLE_ES[es]['name'];
-        //			div.push('<div id="'+es+'_search" class="ext-res-div">');
-        //			div.push('<a class="ext-res" onclick="getExternalSourceResult(\''+es+'\');" href="javascript:void(0)" title="'+esn+'">'+esn+'</a>');
-        //			div.push('<span id="'+es+'_indicator" style="display:none"><img src="'+ROOT_URL+'common/images/indicator.gif"></span>');
-        //			div.push('<span id="'+es+'_results"></span>');
-        //			div.push('</DIV>');
-        //		}
-        //		div.push('</DIV>');
-        // 		$('insert_moreResults').update(div.join(''));
-        
-        
+
         
         
 		initializeJamlTemplates();
@@ -549,7 +532,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                               oddCtr++;
                               item.isOdd = oddCtr;
                               
-                            // alert(JSON.stringify(item));
+							  console.log(item);
                               
                               if(item.format!=undefined && item.format[0]!=undefined){
                               if (item.format[0].indexOf('pdf') != -1)
@@ -795,7 +778,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                                              
          Jaml.register('result', function(data){
                        
-                       var keywordsToEmbed = "test_mathiou";
+                       var keywordsToEmbed = "no keywords available";
                        
                        
                        var odd = "";
@@ -830,18 +813,19 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
 					   /*get id from mdPath */
                        var mdPath = data.mdPath[0].split('/');
 					   var id = mdPath[mdPath.length-1].split('.')[0];
-		               console.log(id); 
-                       
+		               
                        article({class:'item-intro '+odd},
                                header(
                                       h2(//img({src:imgThumb}),
-                                         a({href:data.location,title: data.thisTitle, target: '_blank'},data.thisTitle)),
+                                         a({href:data.location[0],title: data.thisTitle, target: '_blank'},data.thisTitle)),
                                       section(p({cls:'item-intro-desc'}, data.thisDescription),
                                               aside({cls:'clearfix'},
                                                     div({cls:'floatleft'},
                                                         div({cls:'line keywords'}, span("Keywords:"), keywordsToEmbed)),
-                                                    div({cls:'language'}, span("Creative commons licence:"), thisRights),
+                                                   /*
+ div({cls:'language'}, span("Creative commons licence:"), thisRights),
                                                     div({cls:'language'}, span("Rights:"), thisRights2),
+*/
                                                     div({cls:'floatright'},
                                                         div({cls:'line alignright'}, a({href:"item.html?id="+id, cls:'moreinfo'}, "More Info")))))))
                        });
@@ -854,7 +838,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
 	                   //               odd++;
 	                   //               var backgroundClass = ""
 	                   //               if(odd%2===0){backgroundClass = "odd";}
-	                   var keywordsToEmbed = "test_mathiou 2";
+	                   var keywordsToEmbed = "no keywords available";
 	                   
 	                   var odd = "";
 	                   if(data.isOdd%2===1){odd="odd"}
@@ -893,8 +877,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
 	                   /*get id from mdPath */
                        var mdPath = data.mdPath[0].split('/');
 					   var id = mdPath[mdPath.length-1].split('.')[0];
-		               console.log(id); 
-	
+		               
 	                   article({class:'item-intro ' +odd },
 	                           header(
 	                                  h2(img({src:imgThumb}),
