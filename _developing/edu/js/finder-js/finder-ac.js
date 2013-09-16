@@ -556,11 +556,14 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                               else if ((item.format[0].indexOf('word')!= -1) || (item.format[0].indexOf('wordprocessingml')!= -1))
                               item.format='images/icons/word.png';
                               else if ((item.format[0].indexOf('application')!= -1))
-                              item.format='images/icons/application.png';
+                              	item.format='images/icons/application.png';
                               else
-                              item.format='images/icons/application.png';
-                              
-                              }
+                              	item.format='images/icons/application.png';
+	                          }
+	                          else
+	                          {
+		                       	item.format='images/icons/application.png';   
+	                          }
                               
                               
                               if(item.descriptions!=undefined){

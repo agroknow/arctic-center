@@ -559,8 +559,11 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                               item.format='images/icons/application.png';
                               else
                               item.format='images/icons/application.png';
-                              
                               }
+                              else
+	                          {
+		                       	item.format='images/icons/application.png';   
+	                          }
                               
                               
                               if(item.descriptions!=undefined){
