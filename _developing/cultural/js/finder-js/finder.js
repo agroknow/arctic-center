@@ -819,7 +819,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                  
                  Jaml.register('result', function(data){
                                
-                               var keywordsToEmbed = "test_mathiou";
+                               var keywordsToEmbed = " ";
                                
                                
                                var odd = "";
