@@ -491,8 +491,13 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
     font-weight: lighter;
 }
 
+.leftSidebarInfo li{
+    padding:5px 0px;
+}
+
 .item_label{
-    font-size:14px;
+    font-size:1.2em;
+    margin: 10px 0px;
 }
 
 .item_title_link{
@@ -522,6 +527,11 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
     float:left;
     width:550px;
     min-height: 200px;
+}
+
+.itemDescription li
+{
+	padding:5px 0px;
 }
 
 .itemKeywords
