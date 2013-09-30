@@ -692,3 +692,18 @@ a.grflag {
 .reportaproblem {
 	background-image:url(images/reportaproblem.png);
 }
+
+#approved
+{
+	padding:10px 0px;
+}
+#approved img
+{
+	width:70px;
+	float:left;	
+}
+#approved p
+{
+	padding-top: 20px;
+	float:left;	
+}
