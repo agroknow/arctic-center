@@ -113,6 +113,7 @@ langName['ell']= 'Greek';
 langName ['lat'] = 'Latin';
 langName['rus'] = 'Russian';
 langName['fi'] = 'Finnish';
+langName['none'] = 'Other';
 
 
 google.load("language", "1");
