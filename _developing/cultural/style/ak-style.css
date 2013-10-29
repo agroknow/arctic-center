@@ -2,30 +2,9 @@
 	GENERAL
 */
 
-.link_to_general_finder
-{
-	text-align:center;
-	width:100%;
-	margin:30px auto;
-	font-size: 1.2em;
-
-}
-
-.link_to_general_finder a
+.go_to_general p
 {
 	font-size: 1.2em;
-	text-decoration: none;
-	color:#0069be;
-
-}
-
-.link_to_general_finder a img
-{
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-	border-radius: 5px;
 }
 
 /**
@@ -173,16 +152,20 @@
     width:95%;
 }
 
-.highlighted_paths{
+.go_to_general{
     width:48%;
     float:left;
 }
 
-.highlighted_paths h3{
+.go_to_general h3{
     background: url(images/back_blue_gradient.png) repeat-x;
     color:white;
     padding: 15px 10px 10px 10px;
     margin-bottom: 5px;
+}
+
+.go_to_general img{
+   margin:10px 70px;
 }
 
 .teacher_paths{
