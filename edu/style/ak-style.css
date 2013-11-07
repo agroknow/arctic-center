@@ -29,6 +29,22 @@
 }
 
 /**
+ ===========================================Breadcrumb ======================================
+ */
+
+#breadcrumb{
+	width:100%;
+	border-bottom: 1px solid #d90044;
+	border-top: 1px solid #d90044;
+	padding: 3px;
+	font-size: 1.1em;
+}
+
+.active{
+	font-weight: bold;
+}
+
+/**
  ===========================================SEARCH BOX ======================================
  */
 .cf:before, .cf:after{
@@ -116,7 +132,7 @@
     border-color: transparent black transparent;
     top: 12px;
     left: -6px;
-    
+
 }
 
 
@@ -203,7 +219,7 @@
     padding-left:5px;
     text-decoration:none;
     font: bold 15px/20px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    
+
 }
 
 .slider-prev{
@@ -281,8 +297,8 @@
     max-width : 650px; /*fix infinite length of keywords line*/
 	margin-bottom:7px;
     overflow:hidden; /*### need change because it hides some keywords*/
-    
-    
+
+
 }
 
 
@@ -358,7 +374,7 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
     padding-left:10px;
     color:black;
     text-decoration:none;
-    
+
 }
 .yui-pg-next
 {
@@ -379,7 +395,7 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
 	border-radius:0 0 4px 4px;*/
     border-right: 1px solid lightgray;
     float:left;
-    
+
 }
 .filter a {
 	display:block;
@@ -395,15 +411,15 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
     text-transform:uppercase;
     background:url(images/back_blue_gradient.png) top repeat-x;
     color : white;
-    
-    
+
+
 }
 
 .filter_parent a {
     color:white;
     font-weight:lighter;
     font:20px;
-    
+
 }
 
 .filter_parent:hover {
@@ -475,7 +491,7 @@ a.secondary:hover { color:#d90044;text-decoration:underline; }
 	background-color:white;
 	font-weight:normal;
 	text-align:center;
-    
+
 }
 .remove_filters {
 	text-align:right;
@@ -730,10 +746,10 @@ a.grflag {
 #approved img
 {
 	width:70px;
-	float:left;	
+	float:left;
 }
 #approved p
 {
 	padding-top: 20px;
-	float:left;	
+	float:left;
 }
