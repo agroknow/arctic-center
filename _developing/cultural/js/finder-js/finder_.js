@@ -906,7 +906,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                                              //                                                                span({cls:'bold'},'Keywords: '),
                                              //                                                                Jaml.render('keyword',data.keywords)
                                              //                                                                ), br()
-                                             //                                                                ,a({href:"http://83.212.96.219:8080/cultural/services/oai?verb=GetRecord&metadataPrefix=oai_lom&identifier="+data.metaMetadataId, title: "View all meta", target: '_blank'},"View all meta"), br()
+                                             //                                                                ,a({href:"http://54.228.180.124:8080/cultural/services/oai?verb=GetRecord&metadataPrefix=oai_lom&identifier="+data.metaMetadataId, title: "View all meta", target: '_blank'},"View all meta"), br()
                                              //
                                              //                                                                )
                                              //                                                                )*/
@@ -949,7 +949,7 @@ function findMaterials(start,numberResults,needsUpdate,initUpdate){
                                              //                                                                       //  'Context: ', data.context,
                                              //                                                                       br()
                                              //
-                                             //                                                                       ,a({href:"http://83.212.96.219:8080/cultural_repos/services/oai?verb=GetRecord&metadataPrefix=oai_lom&identifier="+data.metaMetadataId, title: "View all meta", target: '_blank'},"View all meta"), br()
+                                             //                                                                       ,a({href:"http://54.228.180.124:8080/cultural_repos/services/oai?verb=GetRecord&metadataPrefix=oai_lom&identifier="+data.metaMetadataId, title: "View all meta", target: '_blank'},"View all meta"), br()
                                              //
                                              //                                                                       )
                                              //                                                                   )
